@@ -15,7 +15,7 @@ It predicts a student’s exam score based on lifestyle and academic inputs such
 | `notebook.ipynb`              | EDA + model training notebook (Jupyter)      |
 | `student_habits_performance.csv` | Cleaned dataset used for model training  |
 | `requirements.txt`            | All Python libraries needed to run the app   |
-| `README.md`                   | Project documentation (this file)            |
+| `README.md`                   | Project documentation                        |
 
 ---
 
