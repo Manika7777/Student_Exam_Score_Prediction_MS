@@ -1,84 +1,94 @@
 # Student_Exam_Score_Prediction_MS
-📊 Student Exam Score Predictor – Streamlit Web App
-This project is a simple yet interactive Machine Learning web app built using Streamlit. It predicts a student’s exam score based on lifestyle and academic inputs such as study hours, sleep, attendance, mental health, and part-time work.
+# 📊 Student Exam Score Predictor – Streamlit Web App
 
-📁 Files Included
-File Name	Description
-app.py	Main Streamlit app for user interaction
-best_model.pkl	Trained Linear Regression model
-notebook.ipynb	EDA + model training notebook (Jupyter)
-student_habits_performance.csv	Cleaned dataset used for model training
-requirements.txt	All Python libraries needed to run the app
-README.md	Project documentation (this file)
+This project is a simple yet interactive **Machine Learning web app** built using **Streamlit**.  
+It predicts a student’s exam score based on lifestyle and academic inputs such as study hours, sleep, attendance, mental health, and part-time work.
 
-🌐 Run on Streamlit Cloud
+---
+
+## 📁 Files Included
+
+| File Name                      | Description                                  |
+|-------------------------------|----------------------------------------------|
+| `app.py`                      | Main Streamlit app for user interaction      |
+| `best_model.pkl`              | Trained Linear Regression model              |
+| `notebook.ipynb`              | EDA + model training notebook (Jupyter)      |
+| `student_habits_performance.csv` | Cleaned dataset used for model training  |
+| `requirements.txt`            | All Python libraries needed to run the app   |
+| `README.md`                   | Project documentation (this file)            |
+
+---
+
+## 🌐 Run on Streamlit Cloud
+
 Click below to access the live deployed app:
 
-🔗 Open App on Streamlit Cloud
+🔗 [Open App on Streamlit Cloud](https://studentexamscorepredictionms.streamlit.app/)
 
-📌 Dataset Description
-Source: Self-constructed dataset simulating student habits
+---
 
-Total Records: ~200+ rows
+## 📌 Dataset Description
 
-Fields Analyzed:
+-  **Source**: [Kaggle – Student Habits vs Academic Performance](https://www.kaggle.com/datasets/jayaantanaath/student-habits-vs-academic-performance)  
+- **Total Records**: ~200+ rows   
 
-study_hours_per_day
+### Fields Analyzed:
+- `study_hours_per_day`  
+- `attendance_percentage`  
+- `mental_health_rating` (scale: 1–10)  
+- `sleep_hours`  
+- `part_time_job` (Yes/No)  
+- `exam_score` (target variable)
 
-attendance_percentage
+---
 
-mental_health_rating (scale: 1–10)
+## 🔍 Key Model + App Highlights
 
-sleep_hours
-
-part_time_job (Yes/No)
-
-exam_score (target variable)
-
-🔍 Key Model + App Highlights
-✅ Clean Streamlit-based UI
-✅ User inputs via sliders and dropdowns
-✅ Predicts exam score using a trained Linear Regression model
-✅ Prediction value clamped between 0 and 100
-✅ Real-time prediction with visual feedback
+✅ Clean Streamlit-based UI  
+✅ User inputs via sliders and dropdowns  
+✅ Predicts exam score using a trained **Linear Regression** model  
+✅ Prediction value clamped between 0 and 100  
+✅ Real-time prediction with visual feedback  
 ✅ Optionally includes bar chart of feature coefficients (interpretability)
 
-📊 Sample Visualizations (Optional in Notebook)
-Correlation matrix of features
+---
 
-Distribution of exam scores
+## 📊 Sample Visualizations (Available in Notebook)
 
-Boxplot for outlier detection in study hours
+- 📉 Correlation matrix of features  
+- 📊 Distribution of exam scores  
+- 📦 Boxplot for outlier detection in study hours  
+- 📈 Bar chart of regression model coefficients (interpretability)
 
-Bar chart of regression model coefficients (interpretability)
+---
 
-🧰 Tools Used
-Python
+## 🧰 Tools Used
 
-Pandas – for data manipulation
+- **Python**  
+- **Pandas** – for data manipulation  
+- **Matplotlib & Seaborn** – for EDA visualizations  
+- **scikit-learn** – model training (`LinearRegression`)  
+- **Streamlit** – for web app creation  
+- **Joblib** – for saving/loading the model
 
-Matplotlib & Seaborn – for EDA visualization
+---
 
-scikit-learn – model training (LinearRegression)
+## 📄 Summary
 
-Streamlit – for web app creation
+- Built a regression-based prediction model for exam scores  
+- Found **study hours** and **attendance** as the strongest predictors  
+- Deployed the app successfully using **Streamlit Cloud**  
+- Allows users to test how different factors may influence performance
 
-Joblib – model saving/loading
+---
 
-📄 Summary
-Built a regression-based prediction model for exam scores
+## 🙋‍♀️ Author
 
-Found study hours and attendance as strongest predictors
+**👩 Manika Sarkar**  
 
-Deployed successfully using Streamlit Cloud
+---
 
-App allows users to test how lifestyle changes might affect scores
+## 📎 License
 
-🙋‍♀️ Author
-👩 Manika Sarkar
-B.Tech CSE | Machine Learning & Data Projects
-🔗 GitHub Profile
+This project is for **academic and learning purposes only**.  
 
-📎 License
-This project is for academic and learning purposes only.
-Dataset is either simulated or cleaned, and no private data is used.
